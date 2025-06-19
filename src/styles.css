@@ -36,6 +36,7 @@ main {
   margin: auto;
   max-width: 100%;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 header h1 {
@@ -135,7 +136,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.container {
+.content {
   max-width: 1000px;
   align-items: stretch;
 }
@@ -144,15 +145,16 @@ img {
   display: grid;
   margin: 20px auto;
   gap: 40px;
-  align-items: center;
 }
 
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
 }
 
 .grid-3-col-1-nar {
@@ -180,9 +182,8 @@ img {
   font-weight: 800;
 }
 
-section.secondary {
+.secondary {
   background-color: var(--bs-secondary1);
-  text-align: center;
   color: var(--bs-light1);
 }
 
@@ -193,6 +194,10 @@ section.secondary {
 .card-text {
   background-color: white;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 15px;
 }
 
 .card img {
@@ -202,8 +207,10 @@ section.secondary {
   color: #1f1e5e;
   font-size: 1.5rem;
 }
-.card.button {
-  margin: 0;
+
+.card-text .button {
+  margin: 20px 0px 10px 0px;
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {
