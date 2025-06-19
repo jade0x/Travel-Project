@@ -1,7 +1,35 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --bs-primary: #e8953e;
+  --bs-secondary: #1f1e5e;
+  --bs-secondary2: #db4a72;
+  --bs-primary-rgb: rgba(242, 134, 98, 0.17);
+}
+
+/* <weight>: Use a value from 100 to 1000
+ <uniquifier>: Use a unique and descriptive class name
+
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.dm-sans-400 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.road-rage-regular {
+  font-family: "Road Rage", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
@@ -10,7 +38,17 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  margin: auto;
+  padding: 60px 20px;
+  max-width: 800px;
+  justify-content: center;
+  text-align: center;
 }
 
 footer {
@@ -18,4 +56,47 @@ footer {
   padding: 30px 0px 10px 0px;
   max-width: 800px;
   text-align: center;
+}
+
+header h1 {
+  font-family: "Road Rage", sans-serif;
+  font-size: 8em;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.hero {
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/assets/4-aerial-view-of-darwin-city-at-sunset.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button {
+  margin: 20px 0px;
+  padding: 10px 30px;
+  background-color: var(--bs-primary);
+  border-radius: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.button:hover {
+  background-color: var(--bs-secondary2);
+  text-decoration: none;
+  color: var(--bs-secondary);
 }
