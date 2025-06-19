@@ -4,9 +4,9 @@
 
 :root {
   --bs-primary1: #e8953e;
-  --bs-secondary: #1f1e5e;
+  --bs-secondary1: #1f1e5e;
   --bs-secondary2: #db4a72;
-  --bs-primary-rgb: rgba(242, 134, 98, 0.17);
+  --bs-light1: #e9e8e8;
 }
 
 /* <weight>: Use a value from 100 to 1000
@@ -45,18 +45,48 @@ body {
 
 main {
   margin: auto;
-  padding: 60px 20px;
-  max-width: 800px;
-  justify-content: center;
+  padding: 60px 0px;
   text-align: center;
 }
 
+header h1 {
+  margin: 20px 0px;
+  font-family: "Road Rage", sans-serif;
+  font-size: 12rem;
+  line-height: 1;
+}
+
+header h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+header h3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
 footer {
-  font-size: 1rem;
-  margin: auto;
-  padding: 30px 0px 10px 0px;
-  max-width: 800px;
-  text-align: center;
+  font-size: 1.1rem;
+  padding: 40px;
+  text-align: left;
+  color: var(--bs-light1);
+  background-image: linear-gradient(
+      rgba(31, 30, 94, 0.7),
+      rgba(31, 30, 94, 0.7)
+    ),
+    url(/assets/3-twin-falls-kakadu.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+  font-weight: 200;
 }
 
 footer a {
@@ -69,24 +99,6 @@ footer a:hover {
   color: var(--bs-primary1);
   text-decoration: none;
   font-style: italic;
-}
-
-header h1 {
-  margin: 10px 0px;
-  font-family: "Road Rage", sans-serif;
-  font-size: 12rem;
-  line-height: 1;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  margin-top: 80px;
-  margin-bottom: 60px;
-  font-weight: 200;
-  font-size: 2.8rem;
 }
 
 .hero {
@@ -102,7 +114,7 @@ h3 {
 }
 
 .button {
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -111,13 +123,16 @@ h3 {
   padding: 10px 30px;
   background-color: var(--bs-primary1);
   border-radius: 40px;
-  color: white;
+  font-size: 1.3rem;
   text-decoration: none;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: var(--bs-secondary2);
+  color: var(--bs-secondary1);
   font-weight: 800;
 }
 
-.button:hover {
-  background-color: var(--bs-secondary2);
-  text-decoration: none;
-  color: var(--bs-secondary);
+@media (max-width: 960px) {
 }
