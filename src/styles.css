@@ -9,16 +9,6 @@
   --bs-light1: #e9e8e8;
 }
 
-/* <weight>: Use a value from 100 to 1000
- <uniquifier>: Use a unique and descriptive class name
-
-.dm-sans-<uniquifier> {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
 .dm-sans-400 {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
@@ -39,13 +29,12 @@ html {
 body {
   font-size: 1.6rem;
   margin: 0 auto;
-  max-height: 100vh;
   font-family: "DM Sans", sans-serif;
 }
 
 main {
   margin: auto;
-  max-width: 1100px;
+  max-width: 100%;
   font-size: 1.25rem;
 }
 
@@ -70,21 +59,22 @@ header h3 {
 }
 
 section {
-  padding: 40px;
-}
-
-section h2 {
-  color: var(--bs-secondary1);
-  font-weight: 00;
-  font-size: 2.5rem;
-  line-height: 1.5;
-  margin-bottom: 0;
+  padding: 60px 40px;
 }
 
 section h3 {
-  font-weight: 300;
-  font-size: 1.5rem;
+  color: var(--bs-secondary1);
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.5;
   margin-bottom: 15px;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  opacity: 0.8;
 }
 
 footer {
@@ -100,6 +90,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 40px;
 }
 
 footer h2 {
@@ -146,12 +137,14 @@ img {
 
 .container {
   max-width: 1000px;
+  align-items: stretch;
 }
 
 .grid {
   display: grid;
   margin: 20px auto;
   gap: 40px;
+  align-items: center;
 }
 
 .grid-2-col {
@@ -159,6 +152,10 @@ img {
 }
 
 .grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-col-1-nar {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -181,6 +178,32 @@ img {
   background-color: var(--bs-secondary2);
   color: var(--bs-secondary1);
   font-weight: 800;
+}
+
+section.secondary {
+  background-color: var(--bs-secondary1);
+  text-align: center;
+  color: var(--bs-light1);
+}
+
+.secondary h3 {
+  color: white;
+}
+
+.card-text {
+  background-color: white;
+  padding: 15px;
+}
+
+.card img {
+  aspect-ratio: 4 / 3;
+}
+.card h3 {
+  color: #1f1e5e;
+  font-size: 1.5rem;
+}
+.card.button {
+  margin: 0;
 }
 
 @media (max-width: 768px) {
