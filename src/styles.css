@@ -52,25 +52,41 @@ main {
 }
 
 footer {
+  font-size: 1rem;
   margin: auto;
   padding: 30px 0px 10px 0px;
   max-width: 800px;
   text-align: center;
 }
 
+footer a {
+  color: var(--bs-secondary2);
+  text-align: center;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-style: italic;
+}
+
 header h1 {
+  margin: 10px 0px;
   font-family: "Road Rage", sans-serif;
-  font-size: 8em;
+  font-size: 12rem;
   line-height: 1;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 h3 {
+  margin-top: 80px;
+  margin-bottom: 60px;
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 2.8rem;
 }
 
 .hero {
