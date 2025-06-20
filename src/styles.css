@@ -213,14 +213,7 @@ img {
   margin-top: auto;
 }
 
-.instagram-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
-}
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
     padding: 30px;
@@ -228,9 +221,5 @@ img {
 
   footer {
     text-align: center;
-  }
-
-  .instagram-grid {
-    grid-template-columns: 1fr;
   }
 }
